@@ -1,0 +1,14 @@
+<!-- Generated template for the NotificationCardComponent component -->
+<ion-card (click)="toggleExpanded()">
+  <ion-card-header>
+    {{contact.vorname}} {{contact.nachname}}
+  </ion-card-header>
+  <ion-card-content>
+    <div *ngIf="expanded">
+      {{nextMeetingString}}
+      <button>Contact!</button>
+      <button>Snooze!</button>
+      <button>Skip!</button>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Benutzer</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="onButtonClose()">
+        <ion-icon name='close'></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons end>
+    <button ion-button icon-only (click)="onSubmit()">
+      <ion-icon name='checkmark'></ion-icon>
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Vorname</ion-label>
+      <ion-input type="text" [(ngModel)]="contact.vorname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Nachname</ion-label>
+      <ion-input type="text" [(ngModel)]="contact.nachname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Intervall</ion-label>
+      <ion-select [(ngModel)]="contact.intervall">
+        <ion-option value="1">1 Monat</ion-option>
+        <ion-option value="3">3 Monate</ion-option>
+        <ion-option value="6">6 Monate</ion-option>
+        <ion-option value="12">12 Monate</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telefon</ion-label>
+      <ion-input type="number" [(ngModel)]="contact.telefon"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Mobil</ion-label>
+      <ion-input type="number" [(ngModel)]="contact.mobil"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>E-Mail</ion-label>
+      <ion-input type="email" [(ngModel)]="contact.email"></ion-input>
+    </ion-item>
+
+
+  </ion-list>
+</ion-content>

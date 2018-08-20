@@ -1,0 +1,8 @@
+<!-- Generated template for the NotificationListComponent component -->
+<ion-list>
+  <!--<ion-list-header>Follow us on Twitter</ion-list-header>-->
+  <ion-item>
+    <!--<ion-icon name="ionic" item-start></ion-icon>-->
+    <notification-card *ngFor="let contact of contactList" [contact]="contact" (isExpanded)="collapseAll()"></notification-card>
+  </ion-item>
+</ion-list>
